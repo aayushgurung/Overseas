@@ -1218,7 +1218,7 @@ body{
   }
 
   .chairman{
-    max-height:512px;
+    max-height:400px;
     overflow: hidden;
   }
 
@@ -1331,12 +1331,22 @@ body{
 }
 
 
+.news .image-container a{
+  color:var(--white-100) !important;
+  text-decoration: none;
+}
+.news .image-container a:hover{
+  color:var(--white-100) !important;
+  text-decoration: underline;
+  transition: 1s all ease-in-out;
+}
+
 
 .card .card-body a{
   text-decoration: underline;
 }
 
-.card .card-body a:hover{
+.card .card-body .btn-link:hover{
   color:var(--blue-400) !important;
   text-decoration: underline;
 }
@@ -1344,6 +1354,25 @@ body{
 .card{
   border:0;
   border-radius: 0;
+}
+
+.cat-title{
+  text-decoration: none !important;
+  color: var(--black-500);
+}
+.cat-title:hover{
+  text-decoration: underline !important;
+  transition: 1s ease-in-out;
+}
+
+.footer a{
+  color:var(--white-100);
+  text-decoration: none;
+}
+
+.footer a:hover{
+  color: var(--white-80);
+  text-decoration: underline;
 }
 /* For screens with a width of 768px or less */
 @media screen and (max-width: 768px) {
@@ -1358,6 +1387,11 @@ body{
   .overlay-text p {
     font-size: 10px;
   }
+  .navbar-toggler {
+    background-color: var(--white-100);
+    border: none;
+    border-radius: 0;
+  }   
 }
   .cat-img{
     height:180px;
@@ -1393,11 +1427,7 @@ body{
     align-items: flex-start !important;
   }
 
-  .navbar-toggler {
-    background-color: var(--white-100);
-    border: none;
-    border-radius: 0;
-  }
+
 
   .logo img {
     width: 20%;
@@ -1441,7 +1471,15 @@ body{
 
 /* For Small Tablets (e.g., iPad Mini) */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Add specific styles for small tablets here */
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+
+  .navbar-toggler {
+    background-color: var(--white-100);
+    border: none;
+    border-radius: 0;
+  }
 }
 
 /* For Large Tablets (e.g., iPad Pro 11") */
